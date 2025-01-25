@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+}
+/*bg image*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(poto/Background\ \(1\).png);
+    background-size: contain;
+    background-position: center;
+}
+/*edit the container classified for the X and Y axis position*/
+.container{
+    padding: 40px 5%;
+}
+/*edit the space position between TLCI and ul li  */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*edit the logo classified size*/
+.colt{
+    width: 150px;
+}
+/*put the li to align horizontally*/
+nav Ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;;
+}
+
+/*change the li color text and remove the underline, also the li size*/
+nav ul li a{
+    color: rgb(0, 255, 21);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+    position: relative;
+}
+/*edit the custom underline*/
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #00ff4096;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+/*make the custom underline interactive*/
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-left: 4%;
+    font-weight: bolder;
+    margin-top: 15%;
+    font-size: 15px;
+}
+
+.header-text h3{
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.header-text h3 span{
+    color: rgb(0, 255, 21);
+    font-size: larger;
+}
+
+#about{
+    padding: 239px 0;
+    color: rgb(253, 253, 253);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15%;
+    border-color: rgb(0, 255, 21);
+    border-style: double;
+    border-collapse: separate;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.fontt{
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(0, 255, 21);
+}
+
+.about-col-2 p{
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.lifedetail{
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.detail::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background-color: rgb(0, 255, 21);
+    bottom: -6px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.detail.active-link::after{
+    width: 50%;
+}
+
+.lifedetail-tab span{
+    color: rgb(0, 255, 21);
+    font-size: small;
+    font-weight: 900;
+    font-style: '';
+}
+
+.lifedetail-tab{
+    color: rgb(251,251,251);
+    font-size: small;
+    font-weight: 900;
+}
+
+.lifedetail-tab{
+    display: none;
+}
+
+.lifedetail-tab.active-tab{
+    display: block;
+}
+
+/*portofolio*/
+
+#portofolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 10px;
+    background: rgb(0,0,0);
+    border-radius: 30px;
+    border: rgb(0, 255, 21)solid 10px;
+
+}
+
+.work{
+    border-radius: 20px;
+    position: relative;
+    margin: 20px 20px;
+    font-size: 15px;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;    
+}
+
+.work video{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    
+
+}
+
+.category{
+    display: grid;
+    place-items: center;
+    width: 20%;
+    height: 30vh;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(0, 255, 21);
+    position: absolute;
+}
+
+.sub-titles{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact{
+    font-weight: 900;
+}
+
+.fa-brands{
+    font-size: 50px;
+    border-radius: 15px;
+    position: relative;
+}
+.fa-solid{
+    font-size: 50px;
+    border-radius: 15px;
+    position: relative;
+}
+.icontact{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icontact a{
+    text-decoration: none;
+    color: rgb(0, 255, 21);
+    cursor: pointer;
+}
+.icontact a:hover::after{
+    color: rgb(0, 255, 21);
+}
+
+/*------por mobail depais-----------*/
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    .header-text{
+        font-size: 12px;
+        margin-top: 100%;
+    }
+
+    .header-text h3{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+    }
+
+    nav ul{
+        background: rgb(204, 126, 10);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width:200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .fontt{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .about-col-2{
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .lifedetail{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

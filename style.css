@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
     color: rgb(253, 253, 253);
 }
 /*bg image*/
@@ -280,6 +280,17 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
 
+    #header{
+        width: 100%;
+        background-image: url(poto/Background.png);
+    }
+
+    .header-text h3 span{
+        color: rgb(0, 255, 21);
+        font-size: larger;
+        background-color: rgb(15, 15, 15);
+    }
+
     .header-text{
         font-size: 12px;
         margin-top: 100%;
@@ -295,7 +306,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: rgb(204, 126, 10);
+        background: rgb(40, 40, 40);
         position: fixed;
         top: 0;
         right: -200px;
